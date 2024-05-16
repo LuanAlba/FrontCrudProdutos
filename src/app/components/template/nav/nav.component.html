@@ -7,7 +7,7 @@
                 </i>
                 <span>Início</span>
             </a>
-            <a mat-list-item  routerLink="/products">
+            <a mat-list-item  routerLink="/produtos">
                 <i class="material-icons">
                     storefront
                 </i>
@@ -15,4 +15,9 @@
             </a>
         </mat-nav-list>
     </mat-sidenav>
+
+    <mat-sidenav-content class="content">
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
 </mat-sidenav-container>
