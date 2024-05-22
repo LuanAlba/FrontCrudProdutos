@@ -13,8 +13,10 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatButtonModule } from '@angular/material/button';
 import { HomeComponent } from './components/views/home/home.component';
 import { ProdutosComponent } from './components/views/produtos/produtos.component';
+import { CriarProdutoComponent } from './components/produto/criar-produto/criar-produto.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { ProdutosComponent } from './components/views/produtos/produtos.componen
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProdutosComponent
+    ProdutosComponent,
+    CriarProdutoComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,8 @@ import { ProdutosComponent } from './components/views/produtos/produtos.componen
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
