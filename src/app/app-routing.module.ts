@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './components/views/home/home.component';
 import { ProdutosComponent } from './components/views/produtos/produtos.component';
 import { CriarProdutoComponent } from './components/produto/criar-produto/criar-produto.component';
+import { AtualizarProdutoComponent } from './components/produto/atualizar-produto/atualizar-produto.component';
 
 const routes: Routes = [
   {
@@ -14,6 +15,10 @@ const routes: Routes = [
   },
   {
     path: "produtos/criar", component: CriarProdutoComponent
+  },
+  {
+    //passando o parâmetro id do produto que será atualizado
+    path: "produtos/atualizar/:id", component: AtualizarProdutoComponent
   }
 
 ];
