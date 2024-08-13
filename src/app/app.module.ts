@@ -29,6 +29,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { AtualizarProdutoComponent } from './components/produto/atualizar-produto/atualizar-produto.component';
+import { ExcluirProdutoComponent } from './components/produto/excluir-produto/excluir-produto.component';
 
 
 registerLocaleData(localePt);
@@ -43,7 +44,8 @@ registerLocaleData(localePt);
     CriarProdutoComponent,
     ObterProdutoComponent,
     ObterProduto2Component,
-    AtualizarProdutoComponent
+    AtualizarProdutoComponent,
+    ExcluirProdutoComponent
   ],
   imports: [
     BrowserModule,
