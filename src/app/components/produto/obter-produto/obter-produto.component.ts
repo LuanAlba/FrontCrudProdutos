@@ -10,7 +10,7 @@ import { ProdutoService } from '../produto.service';
 export class ObterProdutoComponent implements OnInit {
 
   produtos: Produto[]
-  displayedColumns = ['id', 'nome', 'preco'];
+  displayedColumns = ['id', 'nome', 'preco', 'acoes'];
 
   constructor(private produtoService: ProdutoService) {}
 
